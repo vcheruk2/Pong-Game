@@ -200,9 +200,6 @@ def draw(canvas):
     #print paddle1_pos[2][1]
     
     if (ball_pos[0] <= BALL_RADIUS) and (ball_pos[1] <= paddle1_pos[2][1]) and (ball_pos[1] >= paddle1_pos[1][1]) :
-        print ball_pos[1]
-        print paddle1_pos[1][1]
-        print paddle1_pos[2][1]
         ball_vel[0] = - ball_vel[0]
     elif ball_pos[0] <= BALL_RADIUS:
         score2 += 1
